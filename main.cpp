@@ -1,24 +1,10 @@
-/*////////////////////////////////////////////////
-
-	SH	27 June 2023	Code to prove a concept.	
-						Explorer16-32 communnicates serially
-						with the openGL. The position of the propeller
-						is set by the rx value. The rx sets the tx (loop back signal)
-						to re-transmit to Ex16-32. Works perfecly - no latency.
-	SH	28 June 2023	Add the ball and ball position with gravity effect.
-						Haptic code tested ok
-	SH	28 08 2023		Use receive_int16() function to receive 16 bit integer 
-						rather than the previous byte (8 bits).
-
-	See: Vanier\courses_C_drive\MPLAB_projects_original\projects\haptic_balance
-
-	TODO:
-		Fix the com port issue of not being able to use a string
-		The port should be set by the user when starting up 
-
-	Note: to set platform, properties->General-> platform Toolset -> select Visual Studio 2019 (v142)
-
-////////////////////////////////////////////////*/
+/*
+*	Author		Date	Version 	History
+*
+*
+*
+*
+*/
 
 
 #include "freeglut/include/GL/glut.h"
