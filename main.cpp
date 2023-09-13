@@ -46,6 +46,7 @@ int main(int argc, char** argv) {
 	glutInitWindowSize(640, 640);
 	glutCreateWindow("OpenGL lab");
 	glutDisplayFunc(renderScene);
+	glutIdleFunc(renderScene);
 	glutReshapeFunc(changeSize);
 	glutMainLoop();
 }
