@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\student_template\main.cpp(46,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  openGL.vcxproj -> C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\student_template\x64\Debug\openGL.exe
