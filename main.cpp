@@ -45,6 +45,7 @@ int main(int argc, char** argv) {
 	glutInitWindowPosition(10, 10);
 	glutInitWindowSize(640, 640);
 	glutCreateWindow("OpenGL lab");
+	glEnable(GL_DEPTH_TEST); // to avoid back get drawn to the display over the top of the model at the front
 	glutDisplayFunc(renderScene);
 	glutIdleFunc(renderScene);
 	glutReshapeFunc(changeSize);
