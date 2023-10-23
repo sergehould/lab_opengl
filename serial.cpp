@@ -113,7 +113,7 @@ void serial_close(void) {
     CloseHandle(port);
 }
 
-
+/* Function that sends one byte to the serial port */
 void send_one_int8(char tx) {
     uint8_t buff[1];
     static int cnt = 0;
@@ -157,13 +157,16 @@ static void print_error(const char* context)
 
 
 /*
-* Function that receives two bytes and merge them as an int16
-    using a start byte, a stop byte and checksum byte.
-* The function is non-blocking
+ Blocking polling function that receives two bytes 
+ from the serial port and merge them as an int16 
+ using a start byte, a stop byte and checksum byte.
+ Returns the received character if no error.
+ Returns -1 if there is an error.
 */
+
 #define START_BYTE 0x7E
 #define STOP_BYTE 0x7F
-int16_t rec_one_int16_nb() {
+int16_t rec_one_int16_b() {
     uint8_t byte;
     uint8_t start_byte = START_BYTE;
     uint8_t stop_byte = STOP_BYTE;
@@ -188,6 +191,5 @@ int16_t rec_one_int16_nb() {
         // Stop byte error
         return -1;
     }
-
     return (data_bytes[0] << 8) | data_bytes[1];
 }
