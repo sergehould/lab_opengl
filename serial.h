@@ -1,5 +1,5 @@
-#ifndef UTIL_H
-#define	UTIL_H
+#ifndef SERIAL_H
+#define	SERIAL_H
 #include <stdint.h>
 
 #define PORT    COM5
